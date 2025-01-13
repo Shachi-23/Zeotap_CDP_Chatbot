@@ -6,7 +6,12 @@ const data = require('./data.json');
 const app = express();
 const port = 5000;
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'https://zeotap-chatbot-fdff.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+}));
 app.use(bodyParser.json());
 
 function findBestMatch(question) {
