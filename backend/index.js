@@ -72,6 +72,11 @@ function editDistance(s1, s2) {
   return costs[s2.length];
 }
 
+
+app.get("/", (req, res) => {
+  res.json({ message: "hiiiiii" });
+});
+
 app.post('/chat', (req, res) => {
   const userQuestion = req.body.question;
   if (!userQuestion) {
