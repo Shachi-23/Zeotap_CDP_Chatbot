@@ -8,9 +8,7 @@ const port = 5000;
 
 // app.use(cors());
 app.use(cors({
-  origin: 'https://zeotap-chatbot-fdff.vercel.app', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-  allowedHeaders: ['Content-Type', 'Authorization'], 
+  origin: 'https://zeotap-chatbot-fdff.vercel.app' 
 }));
 app.use(bodyParser.json());
 
