@@ -119,7 +119,7 @@ const port = 5000;
 
 // Updated CORS configuration
 app.use(cors({
-  origin: 'https://zeotap-cdp-chatbot-client.vercel.app/',  
+  origin: 'https://zeotap-cdp-chatbot-client.vercel.app',  
   optionsSuccessStatus: 200  
 }));
 
