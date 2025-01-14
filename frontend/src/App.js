@@ -22,7 +22,7 @@ function App() {
     setError(null);
     try {
       // const result = await axios.post('http://localhost:5000/chat', { question });
-      const result = await axios.post('https://zeotap-chatbot-8pms.vercel.app/chat', { question });
+      const result = await axios.post('https://zeotap-cdp-chatbot-server.vercel.app/chat', { question });
       const newEntry = { question, answer: result.data.answer };
       setChatHistory(prevHistory => [...prevHistory, newEntry]);
       setTypingEffect('');
