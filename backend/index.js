@@ -119,8 +119,8 @@ const port = 5000;
 
 // Updated CORS configuration
 app.use(cors({
-  origin: 'https://zeotap-cdp-chatbot-client.vercel.app',  // Correct frontend URL without trailing slash
-  optionsSuccessStatus: 200  // Handle successful preflight requests
+  origin: 'https://zeotap-cdp-chatbot-client.vercel.app',  
+  optionsSuccessStatus: 200  
 }));
 
 // Handling OPTIONS requests for preflight (CORS)
